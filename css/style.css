@@ -1,188 +1,74 @@
-/* Canyon fonts...*/
-@import url("../fonts/CanyonRFont/CanyonRFont.css");
-
-/* TYPOGRAPHY */
-body {
-  font-family: "CanyonR";
-  margin: auto;
-  max-width: 100%;
-  background-color: black;
-  color: white;
-}
-
-/* UTILITAIRES */
-
-img,
-video {
-  max-width: 100%;
-  display: block;
-}
-
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.videoHeader {
-  position: absolute;
-  margin-bottom: 100px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  z-index: -1;
-  object-fit: cover;
-}
-
-.logoHeader {
-  position: absolute;
-  width: 50%;
-  top: 400px;
-  left: 450px;
-  filter: invert();
-}
-.container-header {
-  display: flex;
-  flex-direction: column;
-  /* outline: 1px solid #f0f; */
-  text-align: center;
+body {
+  background-color: #2B2B2B;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
+  background-color: #202020;
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100%;
-}
-
-p {
-  margin: 100px 100px 0 100px;
-}
-
-.columnstxt {
-  columns: 3;
-  column-gap: 70px;
-}
-
-.renderBox {
-  display: flex;
-  justify-content: center;
-}
-
-.render {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 100px;
-
-  width: 95%;
-}
-
-.render:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s;
-}
-
-.flexromane {
-  display: flex;
-  overflow: hidden;
+  flex-direction: column;
 }
 
 h1 {
-  text-align: center;
   font-size: 80px;
+  text-align: center;
 }
 
-.microCercle {
-  min-height: 85vh;
-  margin: 100px 0;
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  width: 75%;
+  font-size: 20px;
+}
+
+section {
+  height: 100vh;
+}
+
+img {
+  height: 100vh;
+}
+
+video {
   width: 100%;
 }
 
-footer {
-  padding-top: 50px;
+.titleOpenPage {
+  padding-top: 200px;
 }
 
-footer img {
-  filter: invert();
-  width: 80%;
-  margin: 50px;
-  /* margin: 150px; */
+.bigBox {
+  display: flex;
+  flex-direction: column;
 }
 
-.lenny {
+.smallBox {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px ;
+}
+
+.meubleBigBox {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
 }
 
-.containerFooter {
+.meubleSmallBox {
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
-.containerFooterBox {
-  display: flex;
-  flex-direction: column;
+.meubleSmallBox-reverse {
+  justify-content: flex-end;
 }
 
-.txtFooter {
-  margin: 0;
-  margin-left: 110px;
-  font-size: 30px;
-}
-
-.romane {
-  margin-top: 0;
-}
-
-.coucou {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 420px) {
-  .logoHeader {
-    left: 90px;
-  }
-
-  .flexromane {
-    flex-direction: column;
-  }
-
-  h1 {
-    font-size: 25px;
-  }
-
-  .render {
-    margin: 30px;
-  }
-
-  .columnstxt {
-    columns: 1;
-    column-gap: 0px;
-    font-size: 10px;
-    margin: 20px 40px;
-  }
-
-  .txtFooter {
-    margin: 0;
-    margin-left: 40px;
-    font-size: 15px;
-  }
-
-  footer img {
-    margin: 0;
-    margin-left: 40px;
-    margin-bottom: 40px;
-  }
-
-  .romane {
-    margin: 0;
-    padding: 15px;
-  }
-
-  .coucou {
-    margin: 0;
-    padding: 15px;
-  }
-}
