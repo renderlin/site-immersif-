@@ -1,0 +1,188 @@
+/* Canyon fonts...*/
+@import url("../fonts/CanyonRFont/CanyonRFont.css");
+
+/* TYPOGRAPHY */
+body {
+  font-family: "CanyonR";
+  margin: auto;
+  max-width: 100%;
+  background-color: black;
+  color: white;
+}
+
+/* UTILITAIRES */
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.videoHeader {
+  position: absolute;
+  margin-bottom: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.logoHeader {
+  position: absolute;
+  width: 50%;
+  top: 400px;
+  left: 450px;
+  filter: invert();
+}
+.container-header {
+  display: flex;
+  flex-direction: column;
+  /* outline: 1px solid #f0f; */
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+p {
+  margin: 100px 100px 0 100px;
+}
+
+.columnstxt {
+  columns: 3;
+  column-gap: 70px;
+}
+
+.renderBox {
+  display: flex;
+  justify-content: center;
+}
+
+.render {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 100px;
+
+  width: 95%;
+}
+
+.render:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.flexromane {
+  display: flex;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+}
+
+.microCercle {
+  min-height: 85vh;
+  margin: 100px 0;
+  width: 100%;
+}
+
+footer {
+  padding-top: 50px;
+}
+
+footer img {
+  filter: invert();
+  width: 80%;
+  margin: 50px;
+  /* margin: 150px; */
+}
+
+.lenny {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.containerFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerFooterBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.txtFooter {
+  margin: 0;
+  margin-left: 110px;
+  font-size: 30px;
+}
+
+.romane {
+  margin-top: 0;
+}
+
+.coucou {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .logoHeader {
+    left: 90px;
+  }
+
+  .flexromane {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .render {
+    margin: 30px;
+  }
+
+  .columnstxt {
+    columns: 1;
+    column-gap: 0px;
+    font-size: 10px;
+    margin: 20px 40px;
+  }
+
+  .txtFooter {
+    margin: 0;
+    margin-left: 40px;
+    font-size: 15px;
+  }
+
+  footer img {
+    margin: 0;
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .romane {
+    margin: 0;
+    padding: 15px;
+  }
+
+  .coucou {
+    margin: 0;
+    padding: 15px;
+  }
+}
